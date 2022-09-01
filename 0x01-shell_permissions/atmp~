@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if [[ $# -eq 0 ]] ; then
+    echo 'error 1 - no commit message'
+    exit 1
+fi
+
+read -p 'username: ' user_var
+echo "The username is: " $user_var
+echo $1
+

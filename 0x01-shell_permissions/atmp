@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if [[ $# -eq 0 ]] ; then
+    echo 'error 1 - no commit message'
+    exit 1
+fi
+
+git add .
+git commit -m '$1'
+git push https://henockt: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@github.com/henockt/alx-system_engineering-devops.git
+
